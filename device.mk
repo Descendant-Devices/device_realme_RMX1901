@@ -49,7 +49,7 @@ PRODUCT_PACKAGES += \
     vendor.oppo.hardware.biometrics.fingerprint@2.1
 
 #PRODUCT_COPY_FILES += \
-    vendor/lineage/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
+    vendor/wave/configs/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -65,3 +65,17 @@ PRODUCT_PACKAGES += \
 
 # Inherit from proprietary version
 $(call inherit-product-if-exists, vendor/realme/RMX1901/RMX1901-vendor.mk)
+
+# Board
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_BOARD_PLATFORM := sdm845
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+    hardware/qcom-caf/sdm845
+
+# HALS
+SRC_AUDIO_HAL_DIR := hardware/qcom-caf/sdm845/audio 
+SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/sdm845/display
+SRC_MEDIA_HAL_DIR := hardware/qcom-caf/sdm845/media

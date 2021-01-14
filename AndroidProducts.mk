@@ -5,4 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_RMX1901.mk
+    $(LOCAL_DIR)/wave_RMX1901.mk
+
+ COMMON_LUNCH_CHOICES := \
+    wave_RMX1901-userdebug \
+    wave_RMX1901-eng
