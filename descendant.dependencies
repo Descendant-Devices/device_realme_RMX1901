@@ -1,0 +1,26 @@
+ [
+ {
+   "remote": "github",
+   "repository": "Descendant-Devices/device_realme_sdm710-common",
+   "target_path": "device/realme/sdm710-common,
+   "branch": "eleven"
+ },
+ {
+   "remote": "github",
+   "repository": "Descendant-Devices/vendor_realme",
+   "target_path": "vendor/realme",
+   "branch": "eleven"
+ },
+ {
+   "remote": "github",
+   "repository": "Descendant-Devices/kernel_realme_sdm710",
+   "target_path": "kernel/realme/sdm710",
+   "branch": "eleven"
+ },
+ {
+   "remote": "github",
+   "repository": "Descendant-Devices/device_realme_RMX1901",
+   "target_path": "device/realme/RMX1901",
+   "branch": "eleven"
+ },
+ ]
